@@ -1,0 +1,29 @@
+{
+  "name": "electron-screen-recorder",
+  "description": "Screen Recorder",
+  "version": "0.0.3",
+  "author": "hokein",
+  "license": "BSD",
+  "keywords": [
+    "Electron",
+    "DesktopCapture",
+    "Screen Recorder",
+    "WebRTC"
+  ],
+  "main": "src/main.js",
+  "bin": {
+    "electron-screen-recorder": "./launch.js"
+  },
+  "scripts": {
+    "build": "electron-packager . --platform=win32 --arch=x64",
+    "start": "electron ."
+  },
+  "dependencies": {
+    "domify": "^1.4.0",
+    "electron": "1.4.12"
+  },
+  "devDependencies": {
+    "electron-packager": "^8.7.0",
+    "electron-prebuilt": "^1.4.13"    
+  }
+}
